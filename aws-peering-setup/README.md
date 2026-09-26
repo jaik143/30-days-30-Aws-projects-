@@ -43,37 +43,6 @@ This lab documents a network design with two VPCs in **US East (N. Virginia)** a
 
 **Why three connections?** Peering is not transitive. Web ↔ App and App ↔ Database do not create a Web ↔ Database path. This topology therefore uses a direct peer for every pair. See [AWS peering behavior and limitations](https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-basics.html).
 
-The diagram demonstrates network connectivity. Applications should still permit only the flows they need; a Web-to-Database route does not require allowing direct database access from the Web tier.
-
-### Actual deployment shown in the screenshots
-
-| Host | Region | Observed private IP |
-| --- | --- | --- |
-| `web_server` | `us-east-1` | `10.1.14.80` |
-| `app_server` | `us-east-1` | `172.16.14.199` |
-| `db_server` | `us-east-2` | `192.168.11.41` |
-
-These addresses belong to the VPC CIDRs in the diagram, but are outside its illustrated `/24` subnets. Exact deployed subnet masks are not visible in the supplied evidence. Use the actual subnet configuration when reproducing this deployment.
-
-The screenshots show the inter-Region request initiated from the Database VPC in Ohio and accepted by the Web VPC in N. Virginia. This reverses the requester/accepter roles in the example connection plan; either direction can establish the same bidirectional peering relationship.
-
-## What this project demonstrates
-
-- Planning non-overlapping network address ranges.
-- Connecting VPCs within and across AWS Regions.
-- Configuring the forward and return paths for each subnet.
-- Separating routing from service access controls.
-- Testing private connectivity and diagnosing failed connections.
-
-## Prerequisites
-
-- An AWS account with permissions to manage VPCs, subnets, route tables, peering connections, security groups, and lab EC2 instances.
-- Access to both `us-east-1` and `us-east-2`.
-- Three non-overlapping VPC address ranges, including any secondary CIDRs.
-- A way to administer the test hosts, such as Systems Manager Session Manager with an instance role, agent, and the required service connectivity.
-- For the optional CLI checks: AWS CLI configured for the intended account.
-
-This walkthrough assumes **one AWS account**. For a cross-account variation, supply the peer account ID and have the owner of the accepter VPC accept the request.
 
 ## Implementation
 
