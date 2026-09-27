@@ -16,7 +16,10 @@ A growing collection of hands-on AWS projects, documenting architecture, impleme
 aws-practice-projects/
 ├── README.md
 ├── PROJECT-TEMPLATE.md
-└── aws-peering-setup/
+├── aws-peering-setup/
+│   ├── README.md
+│   └── images/
+└── vpc-flow-logs-to-s3/
     ├── README.md
     └── images/
 ```
