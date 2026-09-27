@@ -19,6 +19,8 @@ This project captures metadata about network flows. It does not capture the full
 
 ## Architecture
 
+![VPC Flow Logs delivery path from EC2 instances in private subnets to Amazon S3](images/architecture.png)
+
 ```text
 Internet client
       │ HTTPS / HTTP response traffic
