@@ -21,36 +21,6 @@ This project captures metadata about network flows. It does not capture the full
 
 ![VPC Flow Logs delivery path from EC2 instances in private subnets to Amazon S3](images/architecture.png)
 
-```text
-Internet client
-      │ HTTPS / HTTP response traffic
-      ▼
-EC2 instance: test-ec2-vpcflowlogs
-Private IP: 172.31.2.143
-      │
-      ▼
-Default VPC: 172.31.0.0/16  (us-east-1)
-      │  VPC Flow Logs — ACCEPT, 1-minute aggregation
-      ▼
-S3 bucket: vpc-flowlogs-jaik
-      │
-      ▼
-Compressed flow-log object (.log.gz)
-```
-
-## Resources shown in the evidence
-
-| Resource | Observed value |
-| --- | --- |
-| AWS Region | `us-east-1` — US East (N. Virginia) |
-| VPC | Default VPC, CIDR `172.31.0.0/16` |
-| EC2 instance | `test-ec2-vpcflowlogs` (`t3.micro`) |
-| Instance private IP | `172.31.2.143` |
-| Nginx | Active and running in the captured session |
-| S3 bucket | `vpc-flowlogs-jaik` |
-| Log filter | `ACCEPT` |
-| Aggregation interval | 1 minute |
-| Destination | Amazon S3, AWS default format |
 
 ## Implementation
 
