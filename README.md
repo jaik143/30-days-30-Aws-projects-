@@ -9,6 +9,7 @@ A growing collection of hands-on AWS projects, documenting architecture, impleme
 | Day | Date | Project | Topics | Evidence |
 | --- | --- | --- | --- | --- |
 | 01 | 2026-09-26 | [AWS Peering Setup](aws-peering-setup/README.md) | VPC, routing, same-Region and inter-Region peering, EC2 | Architecture + 10 implementation screenshots |
+| 02 | 2026-09-27 | [VPC Flow Logs to S3](vpc-flow-logs-to-s3/README.md) | EC2, Nginx, VPC Flow Logs, S3 | 8 selected implementation screenshots |
 
 ## Repository structure
 
