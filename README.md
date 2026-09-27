@@ -10,6 +10,7 @@ A growing collection of hands-on AWS projects, documenting architecture, impleme
 | --- | --- | --- | --- | --- |
 | 01 | 2026-09-26 | [AWS Peering Setup](aws-peering-setup/README.md) | VPC, routing, same-Region and inter-Region peering, EC2 | Architecture + 10 implementation screenshots |
 | 02 | 2026-09-27 | [VPC Flow Logs to S3](vpc-flow-logs-to-s3/README.md) | EC2, Nginx, VPC Flow Logs, S3 | 8 selected implementation screenshots |
+| 03 | 2026-09-27 | [S3 Gateway VPC Endpoint](s3-gateway-vpc-endpoint/README.md) | Private subnets, route tables, S3 Gateway Endpoint | Architecture + 4 selected screenshots |
 
 ## Repository structure
 
@@ -20,7 +21,10 @@ aws-practice-projects/
 ├── aws-peering-setup/
 │   ├── README.md
 │   └── images/
-└── vpc-flow-logs-to-s3/
+├── vpc-flow-logs-to-s3/
+│   ├── README.md
+│   └── images/
+└── s3-gateway-vpc-endpoint/
     ├── README.md
     └── images/
 ```
