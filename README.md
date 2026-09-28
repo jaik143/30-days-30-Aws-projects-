@@ -8,9 +8,9 @@ A 30-day hands-on AWS challenge, documenting architecture, implementation, scree
 
 | Day | Date | Project | Topics | Evidence |
 | --- | --- | --- | --- | --- |
-| 01 | 2026-09-26 | [Day 01 – AWS Peering Setup](aws-peering-setup/README.md) | VPC, routing, same-Region and inter-Region peering, EC2 | Architecture + 10 implementation screenshots |
-| 02 | 2026-09-27 | [Day 02 – VPC Flow Logs to S3](vpc-flow-logs-to-s3/README.md) | EC2, Nginx, VPC Flow Logs, S3 | 8 selected implementation screenshots |
-| 03 | 2026-09-27 | [Day 03 – S3 Gateway VPC Endpoint](s3-gateway-vpc-endpoint/README.md) | Private subnets, route tables, S3 Gateway Endpoint | Architecture + 4 selected screenshots |
+| 01 | 2026-09-26 | [Day 01 – AWS Peering Setup](day-01-aws-peering-setup/README.md) | VPC, routing, same-Region and inter-Region peering, EC2 | Architecture + 10 implementation screenshots |
+| 02 | 2026-09-27 | [Day 02 – VPC Flow Logs to S3](day-02-vpc-flow-logs-to-s3/README.md) | EC2, Nginx, VPC Flow Logs, S3 | 8 selected implementation screenshots |
+| 03 | 2026-09-27 | [Day 03 – S3 Gateway VPC Endpoint](day-03-s3-gateway-vpc-endpoint/README.md) | Private subnets, S3 Gateway Endpoint | Architecture + 6-step test evidence |
 
 ## Repository structure
 
@@ -18,13 +18,13 @@ A 30-day hands-on AWS challenge, documenting architecture, implementation, scree
 30-days-30-aws-projects/
 ├── README.md
 ├── PROJECT-TEMPLATE.md
-├── aws-peering-setup/
+├── day-01-aws-peering-setup/
 │   ├── README.md
 │   └── images/
-├── vpc-flow-logs-to-s3/
+├── day-02-vpc-flow-logs-to-s3/
 │   ├── README.md
 │   └── images/
-└── s3-gateway-vpc-endpoint/
+└── day-03-s3-gateway-vpc-endpoint/
     ├── README.md
     └── images/
 ```
