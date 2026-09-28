@@ -1,8 +1,8 @@
-# AWS Practice Projects
+# 30 Days, 30 AWS Projects
 
-### One day. One project. Practical AWS experience.
+### One day. One AWS project. Build practical cloud experience.
 
-A growing collection of hands-on AWS projects, documenting architecture, implementation, screenshots, and lessons learned.
+A 30-day hands-on AWS challenge, documenting architecture, implementation, screenshots, and lessons learned.
 
 ## Project journal
 
@@ -15,7 +15,7 @@ A growing collection of hands-on AWS projects, documenting architecture, impleme
 ## Repository structure
 
 ```text
-aws-practice-projects/
+30-days-30-aws-projects/
 ├── README.md
 ├── PROJECT-TEMPLATE.md
 ├── aws-peering-setup/
