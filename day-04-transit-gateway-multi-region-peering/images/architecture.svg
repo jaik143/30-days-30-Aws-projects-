@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720" role="img" aria-labelledby="title desc">
+  <title id="title">AWS Transit Gateway multi-region architecture</title>
+  <desc id="desc">VPC-A and VPC-B in North Virginia attach to one Transit Gateway. VPC-C in Ohio attaches to another Transit Gateway. The gateways peer across regions.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f7f9fc}.region{fill:#fff;stroke:#6b7c93;stroke-width:2}.vpc{fill:#eef5ff;stroke:#3b82c4;stroke-width:2}.tgw{fill:#fff1db;stroke:#d97706;stroke-width:2}.server{fill:#ecfdf3;stroke:#16a34a;stroke-width:2}.label{font-family:Arial,sans-serif;fill:#172b4d}.h{font:700 25px Arial,sans-serif}.s{font:600 18px Arial,sans-serif}.p{font:16px Arial,sans-serif}.line{stroke:#42526e;stroke-width:4;fill:none}.peer{stroke:#7c3aed;stroke-width:5;stroke-dasharray:12 8;fill:none}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#42526e"/></marker>
+    <marker id="purpleArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect class="bg" width="1400" height="720"/>
+  <text x="700" y="48" text-anchor="middle" class="label h">AWS Transit Gateway Multi-Region Connectivity</text>
+  <rect class="region" x="55" y="85" rx="18" width="620" height="570"/><text x="85" y="125" class="label h">North Virginia · us-east-1</text>
+  <rect class="region" x="725" y="85" rx="18" width="620" height="570"/><text x="755" y="125" class="label h">Ohio · us-east-2</text>
+  <rect class="vpc" x="95" y="170" rx="12" width="240" height="170"/><text x="115" y="205" class="label s">VPC-A</text><text x="115" y="232" class="label p">10.0.1.0/24</text>
+  <rect class="server" x="135" y="265" rx="10" width="160" height="48"/><text x="215" y="295" text-anchor="middle" class="label p">Server-1 · 10.0.1.7</text>
+  <rect class="vpc" x="95" y="425" rx="12" width="240" height="170"/><text x="115" y="460" class="label s">VPC-B</text><text x="115" y="487" class="label p">10.0.2.0/24</text>
+  <rect class="server" x="135" y="520" rx="10" width="160" height="48"/><text x="215" y="550" text-anchor="middle" class="label p">Server-2 · 10.0.2.13</text>
+  <rect class="tgw" x="410" y="315" rx="14" width="215" height="112"/><text x="517" y="358" text-anchor="middle" class="label s">Transit Gateway</text><text x="517" y="387" text-anchor="middle" class="label p">us-east-1 hub</text>
+  <rect class="vpc" x="790" y="300" rx="12" width="240" height="190"/><text x="810" y="335" class="label s">VPC-C</text><text x="810" y="362" class="label p">10.0.3.0/24</text>
+  <rect class="server" x="830" y="405" rx="10" width="160" height="48"/><text x="910" y="435" text-anchor="middle" class="label p">Server-3 · 10.0.3.6</text>
+  <rect class="tgw" x="1080" y="340" rx="14" width="215" height="112"/><text x="1187" y="383" text-anchor="middle" class="label s">Transit Gateway</text><text x="1187" y="412" text-anchor="middle" class="label p">us-east-2 hub</text>
+  <path class="line" marker-end="url(#arrow)" d="M335 255 C370 270 385 315 410 340"/><path class="line" marker-end="url(#arrow)" d="M335 510 C370 490 385 430 410 405"/>
+  <path class="line" marker-end="url(#arrow)" d="M1030 395 L1080 395"/>
+  <path class="peer" marker-start="url(#purpleArrow)" marker-end="url(#purpleArrow)" d="M625 370 C770 210 925 210 1080 370"/>
+  <text x="850" y="230" text-anchor="middle" class="label s" fill="#7c3aed">Inter-Region Transit Gateway Peering</text>
+  <text x="700" y="690" text-anchor="middle" class="label p">Private routing: VPC route tables → local Transit Gateway → peering attachment → remote Transit Gateway</text>
+</svg>

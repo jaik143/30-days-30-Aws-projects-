@@ -11,6 +11,7 @@ A 30-day hands-on AWS challenge, documenting architecture, implementation, scree
 | 01 | 2026-09-26 | [Day 01 – AWS Peering Setup](day-01-aws-peering-setup/README.md) | VPC, routing, same-Region and inter-Region peering, EC2 | Architecture + 10 implementation screenshots |
 | 02 | 2026-09-27 | [Day 02 – VPC Flow Logs to S3](day-02-vpc-flow-logs-to-s3/README.md) | EC2, Nginx, VPC Flow Logs, S3 | 8 selected implementation screenshots |
 | 03 | 2026-09-27 | [Day 03 – S3 Gateway VPC Endpoint](day-03-s3-gateway-vpc-endpoint/README.md) | Private subnets, S3 Gateway Endpoint | Architecture + 6-step test evidence |
+| 04 | 2026-09-29 | [Day 04 – Transit Gateway Multi-Region Peering](day-04-transit-gateway-multi-region-peering/README.md) | Transit Gateway, VPC attachments, inter-Region peering, routing, EC2 | Architecture + 10 implementation screenshots |
 
 ## Repository structure
 
@@ -24,7 +25,10 @@ A 30-day hands-on AWS challenge, documenting architecture, implementation, scree
 ├── day-02-vpc-flow-logs-to-s3/
 │   ├── README.md
 │   └── images/
-└── day-03-s3-gateway-vpc-endpoint/
+├── day-03-s3-gateway-vpc-endpoint/
+    ├── README.md
+    └── images/
+└── day-04-transit-gateway-multi-region-peering/
     ├── README.md
     └── images/
 ```
