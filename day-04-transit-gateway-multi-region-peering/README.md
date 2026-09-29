@@ -4,7 +4,7 @@
 
 **Project 04 · AWS Networking · Regions: us-east-1 and us-east-2**
 
-way |
+
 
 The Transit Gateways were peered between Regions. The peering request was initiated from Ohio and accepted in North Virginia. Static Transit Gateway routes and VPC route-table routes complete the private path between every server.
 
