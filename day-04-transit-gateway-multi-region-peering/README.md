@@ -18,9 +18,11 @@ The Transit Gateways were peered between Regions. The peering request was initia
 
 ## Architecture
 
-![Architecture diagram showing three VPCs connected by Transit Gateways and inter-Region peering](images/architecture.svg)
+![Architecture diagram showing three VPCs connected by Transit Gateways and inter-Region peering](images/architecture.png)
 
 Traffic from a server first follows a VPC route to its local Transit Gateway. For the remote Region, the local Transit Gateway sends traffic through the peering attachment to the remote Transit Gateway, which forwards it to the destination VPC attachment.
+
+The diagram shows the network topology and CIDR ranges; the table above records the private IPs used in the verified ping tests.
 
 ## Services used
 
