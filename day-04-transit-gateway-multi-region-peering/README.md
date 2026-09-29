@@ -4,15 +4,7 @@
 
 **Project 04 · AWS Networking · Regions: us-east-1 and us-east-2**
 
-## What I built
-
-I connected three VPCs with AWS Transit Gateway:
-
-| Location | Network | EC2 private IP | Connection |
-| --- | --- | --- | --- |
-| North Virginia (`us-east-1`) | VPC-A — `10.0.1.0/24` | Server-1 — `10.0.1.7` | Attached to the North Virginia Transit Gateway |
-| North Virginia (`us-east-1`) | VPC-B — `10.0.2.0/24` | Server-2 — `10.0.2.13` | Attached to the North Virginia Transit Gateway |
-| Ohio (`us-east-2`) | VPC-C — `10.0.3.0/24` | Server-3 — `10.0.3.6` | Attached to the Ohio Transit Gateway |
+way |
 
 The Transit Gateways were peered between Regions. The peering request was initiated from Ohio and accepted in North Virginia. Static Transit Gateway routes and VPC route-table routes complete the private path between every server.
 
