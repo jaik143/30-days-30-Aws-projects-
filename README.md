@@ -14,6 +14,7 @@ A 30-day hands-on AWS challenge, documenting architecture, implementation, scree
 | 04 | 2026-09-29 | [Day 04 – Transit Gateway Multi-Region Peering](day-04-transit-gateway-multi-region-peering/README.md) | Transit Gateway, VPC attachments, inter-Region peering, routing, EC2 | Architecture + 10 implementation screenshots |
 | 05 | 2026-10-01 | [Day 05 – Application Load Balancer](day-05-application-load-balancer/) | Reserved for Application Load Balancer | Folder ready for project documentation |
 | 06 | 2026-10-02 | [Day 06 – Network Load Balancer](day-06-network-load-balancer/README.md) | NLB, TCP target group, EC2 targets, multi-AZ network mapping | Architecture + 4 configuration screenshots |
+| 07 | 2026-10-03 | [Day 07 – Route 53](day-07-route-53/README.md) | DNS and hosted zones | Starter folder; implementation pending |
 
 ## Repository structure
 
@@ -35,9 +36,11 @@ A 30-day hands-on AWS challenge, documenting architecture, implementation, scree
     └── images/
 ├── day-05-application-load-balancer/
 │   └── .gitkeep
-└── day-06-network-load-balancer/
+├── day-06-network-load-balancer/
     ├── README.md
     └── images/
+└── day-07-route-53/
+    └── README.md
 ```
 
 Each new project gets its own descriptive folder. The journal records the day number and date so folders remain easy to browse by topic.
